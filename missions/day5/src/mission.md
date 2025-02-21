@@ -1,44 +1,25 @@
-# Day 5 Quiz
+# Day 4 Mission
 
 ### **_Quiz 1._**
 
-아래 코드의 변수 a,b,c,d,e의 타입은 각각 어떻게 추론될까요?
+> 🎯 미션 안내
 
-```TypeScript
-let a = 10;
-const b = 20;
-const c = [1, 2];
-const d = [1, "hello", true];
-const e = [1, 2, 3] as const;
-```
+오늘의 미션은 바로 학습 노트 작성 입니다.
 
-> [Answer](https://www.typescriptlang.org/play/?strict=false&noImplicitAny=false&ts=5.1.6#code/PQKgUA2gBIHN2DgTVAxg4HBqoF0yBFRwGe1UCrzgOy2Aa41ACzImADPYBhDUAhgDQBGDAxgwCYmADC4KHjgAuNRAgDVCogFtHA3a2AYmqiAU2cAGHYAIWwDJ1gFLGA-FChgAtFBr0SCqIAaawD81gH06oAQSh9AC6NRAqBNFALquAficAcg6t37aTI3lTSygAITteRxcPb18DVkDgqwBhCKi3Lx89Ay45IPMrABE05wzY7NoAU0SCqABREujMsBBgMDAAG0qAF3ooAF4oAEYABgBuMFYAewA7AGdepgGoACZxydmFqFZliCGGVbQJ6fnejl39qAAiAAtKjo6pq4PugCcAV0qjjdOoSouDisDgBmND0ObbTbdCZgUBQCAARXeAEsAF5ggx0HgCKCAFm7AOOjgB5xwA6HXkVBooK0wN0AJ4AB3+tkGM3eAFsmJVXjC4YiUei-FAAhFBASSWS1JoqbSGWFlmtuSB4Ui0RjaAlhXiiaSFOTJW1pf9Usy2RzXhBvrDFbyVQLcnwRVrxRSpfT-sVBgAKFnszlQAA+UAWr2RMwA5v7BVMpl06DMAJTmhVKvmqv7Yh1inUSyn6131AFA0FJiAAFUqCzBgBvRwAMdYAA3sADIuAFKbnIBXpsAIuNQQAtM4AbBcAGqvVqCAEHHADqrUEAlWOAEebSdQnL3AAOTUEAUqOAVqHABNNgBOmnNgZGsulTV69ADe9QAju86B0DnUAB4M1jdA4AOSm3WsMxpUAAvlAAGavKastcAACBo6KwNwXl0YblsA7zdMiHRzFcMIGlAZYLMkdBzOWuxgFoN53t0AA8dRnheRHWAc3qmgAfDRDB4fUt6VPeJFkR0RGhICIx0Qx+HMaxpHnhxyRUSanLmrxjEESxxFCeRhQHF64mvBGQYhuGAZMFGMbxpJ9HSQJcnsSRBx7ICIJoHRYDfEAA)
+오늘 배운 내용을 토대로 아래의 4가지 타입에 대해 가볍게 정리해보세요
 
-#
+- Unknown
 
-### **_Quiz 2._**
+- Never
 
-다음 요구사항을 만족하는 Animal, DogCat(개냥이) 타입을 완성하세요
+- Void
+
+- Any
+
+블로그나 개인 노션에 작성하셨다면 링크로 남겨주시면 더 좋아요 👍
+
+(강의 중에 설명하지 않은 내용도 찾아 정리해주시면 훠얼씬 좋아요)
 <br>
+[출처] 타입스크립트 미션 안내 (~02.20) (한입 프론트엔드 개발자 커뮤니티) | 작성자 이정환
 
-- Animal 타입은 Dog 타입일 수도 Cat 타입일 수도 있습니다.
-- DogCat 타입은 Dog이자 Cat입니다.
-
-```TypeScript
-
-type Dog = {
-  name: string;
-  color: string;
-  };
-
-type Cat = {
-name: string;
-age: number;
-};
-
-type Animal = never;
-type DogCat = never;
-
-```
-
-> [Answer](https://www.typescriptlang.org/play/?strict=false&noImplicitAny=false&ts=5.1.6#code/PQKgUA2gBIHN2DgTVAxg4HBqoF0yBOmwMuNUCljgNrWA1A4LargIuNSAznYI4TgGquApTVAIIB2AlgLYCGANgDRQAIgHsA5gGEuAFwAUyQKcNgF3GAlFEADC4FDxioBExwIyDtQByDeMAFpm7bj3UbAAuNCx1wD7jUQBhDgEeaokqU9cfAEeOArUOAE02YAHSm9hLS1nYiooqACeOe0hoh4SDAYGCgUBAAigCubABeaFCAIqOAGe2AGuNQgCrzgDstgD6dUHqALqtQgCRjgBqdLXCADjWGeFAZYFIAngAOAKaRUAC8UADeYFBQLFwc0wBcUADOUgBObCyiANyrUADGwjzCh7sHx6cXAL4XY1OzXgvLlxtbR5HE7nS5cUQ7dYFDgAI2mhzeHwmM3MnF4vziUAAPskpJ8UXEfotMQAyXFZHIQAAq0wOZUAN6OABjrAAG9gAZFxiAVAnAK9NFEALTOAGwXaIyoIAQccAOqtQQCVY25ADodrg5tEAA5NQQBSo8FMCNMjcWAcoFwLLw9rtWGieBAyosIJcVms1gDIQAiQAFi4BJbsUDr4lzWNzuDygDphh2EAHcWB7Lq9PWsbbb7bsHYAUKcAH93h216iG7ACMAAYo1BI2A0B9tbqACZiLy7QnRRYxuP+hTuvPgyEAJjzPvu8cAGnOACMnAJMD4feYCAA)
+> 노션 정리 보러가기 👉 [Notion](https://seugnmin.notion.site/2025-02-19-1871f1669d108056a7a5f630b30442fb?pvs=4)
